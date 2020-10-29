@@ -9,6 +9,12 @@ git:
     depth: 3
 script:
     - yarn build
+notifications:
+    email:
+        recipients:
+            - bukaro.dany@gmail.commit_message
+        on:success: always
+        on_failure: always
 deploy:
     provider: pages
     skip-cleanup: true
